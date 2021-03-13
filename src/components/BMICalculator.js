@@ -63,6 +63,7 @@ export function BMICalculator() {
         <input
           type="text"
           value={weight}
+          placeholder="Enter you weight"
           onChange={handleWeightInputChange}
         ></input>
       </div>
@@ -71,6 +72,7 @@ export function BMICalculator() {
         <input
           type="text"
           value={height}
+          placeholder="Enter your height"
           onChange={handleHeightInputChange}
         ></input>
       </div>
