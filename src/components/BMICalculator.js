@@ -31,7 +31,7 @@ export function BMICalculator() {
 
     return (
       <p>
-        The suggested weight for your {height}cm height is in the range of
+        The suggested weight for your {height}cm height is in the range of{" "}
         <strong>
           {Math.round(lowestWeight)} - {Math.round(highestWeight)} kgs.
         </strong>
@@ -63,7 +63,7 @@ export function BMICalculator() {
         <input
           type="text"
           value={weight}
-          placeholder="Enter you weight"
+          onChange={handleWeightInputChange}
           onChange={handleWeightInputChange}
         ></input>
       </div>
@@ -72,13 +72,13 @@ export function BMICalculator() {
         <input
           type="text"
           value={height}
-          placeholder="Enter your height"
+          onChange={handleHeightInputChange}
           onChange={handleHeightInputChange}
         ></input>
       </div>
       <button
         type="button"
-        className="btn btn-primary mt-4"
+        className="btn btn-info text-light mt-4"
         onClick={calculateBMIValue}
       >
         Calculate BMI
